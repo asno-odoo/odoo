@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <record id="default_website_pe" model="website">
+        <field name="name">(PE) Peruvian Website</field>
+        <field name="company_id" ref="l10n_pe.demo_company_pe" />
+        <field
+            name="domain"
+            model="ir.config_parameter"
+            eval="obj().env['ir.config_parameter'].sudo().get_param('web.base.url')"/>
+    </record>
+
+</odoo>
